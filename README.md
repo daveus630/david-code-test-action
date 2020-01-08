@@ -20,4 +20,6 @@ Note that my backend server is running on port 4000.
 5. When adding json data, run the frontend app from the console or terminal first by typing
 npm start  <enter> a simple form built with react will be loaded in the browser.
  
-6. you can try adding json object
+6. You can try adding json object, react app is running on different port (3000).
+7. If you want to run unit testing, type the below command to backend terminal
+npm run test  <enter>
