@@ -1,0 +1,16 @@
+{
+    "dataFolder": "api/data",
+    "cashInURL": "http://private-38e18c-uzduotis.apiary-mock.com/config/cash-in",
+    "cashOutURL": {
+        "natural": "http://private-38e18c-uzduotis.apiary-mock.com/config/cash-out/natural",
+        "legal": "http://private-38e18c-uzduotis.apiary-mock.com/config/cash-out/juridical"
+    },
+    "userType": {
+        "Natural" : "natural",
+        "Juridical" : "juridical"
+    },
+    "type": {
+        "CashIn": "cash_in",
+        "CashOut": "cash_out"
+    }
+}
