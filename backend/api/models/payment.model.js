@@ -30,7 +30,7 @@ module.exports = class Payment {
             }
             payments.push(this.payment);
             fs.writeFile(p, JSON.stringify(payments), (err) => {
-                console.log(err);
+                if(err => console.log(err));                
             })
         })
     }
