@@ -23,10 +23,10 @@ app.use('/api', paymentRoute);
 
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
-    const args = process.argv;
-    const fileIndex = args.findIndex(x => x == 'input.json');
-    const file =   fileIndex != -1 ? args[fileIndex] : "input.json";
+    let args = process.argv;
+    let fileIndex = args.findIndex(x => x == 'input.json');
+    let file =  fileIndex != -1 ? args[fileIndex] : 'input.json';
     if (file.split('.')[1] === 'json' || file.split('.')[1] === 'txt') {
-        require('./api/compute')(file)
+        require('./api/compute')(file);
     }
 }) 
