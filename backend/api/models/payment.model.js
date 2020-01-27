@@ -3,10 +3,11 @@ const path = require('path');
 const dateformat = require('dateformat');
 const config = require('../../constants/config.json');
 
-const file = process.argv[process.argv.length - 1];
+//const file = process.argv[process.argv.length - 1];
+const file = 'input.json';
 
 module.exports = class Payment {
-    payment = {};
+    payment = {}
     constructor(paymentObj) {
         this.payment.date = dateformat(paymentObj.date, "isoDate") || dateformat(new Date(), "isoDate");
         this.payment.user_id = parseInt(paymentObj.user_id);
